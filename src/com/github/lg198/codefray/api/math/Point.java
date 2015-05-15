@@ -34,4 +34,8 @@ public class Point {
     public Point translate(int xd, int yd) {
         return new Point(x + xd, y + yd);
     }
+
+    public Point in(Direction d) {
+        return new Point(x + d.getXChange(), y + d.getYChange());
+    }
 }

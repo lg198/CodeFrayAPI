@@ -9,6 +9,7 @@ public interface GolemInfo {
     public int getId();
     public Point getLocation();
     public Team getTeam();
-    public boolean hasFlag();
+    public Team getHeldFlag();
+    public boolean isHoldingFlag();
     public int getHealth();
 }

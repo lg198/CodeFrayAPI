@@ -38,4 +38,13 @@ public class Point {
     public Point in(Direction d) {
         return new Point(x + d.getXChange(), y + d.getYChange());
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (! (o instanceof Point)) {
+            return false;
+        }
+        Point p = (Point) o;
+        return p.getX() == getX() && p.getY() == getY();
+    }
 }

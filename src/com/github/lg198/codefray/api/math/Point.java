@@ -47,4 +47,9 @@ public class Point {
         Point p = (Point) o;
         return p.getX() == getX() && p.getY() == getY();
     }
+
+    @Override
+    public String toString() {
+        return String.format("(%d, %d)", x, y);
+    }
 }

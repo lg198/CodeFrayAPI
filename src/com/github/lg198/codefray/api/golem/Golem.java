@@ -1,5 +1,6 @@
 package com.github.lg198.codefray.api.golem;
 
+import com.github.lg198.codefray.api.game.TileType;
 import com.github.lg198.codefray.api.math.Direction;
 import com.github.lg198.codefray.api.game.Game;
 import com.github.lg198.codefray.api.game.Team;
@@ -28,6 +29,5 @@ public interface Golem {
     public void shoot(GolemInfo gi);
     public int getShotsLeft();
 
-    public boolean isWall(Direction d);
-    public boolean isGolem(Direction d);
+    public TileType detectTile(Direction d);
 }

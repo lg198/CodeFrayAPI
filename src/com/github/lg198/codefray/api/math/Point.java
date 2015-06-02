@@ -39,6 +39,14 @@ public class Point {
         return new Point(x + d.getXChange(), y + d.getYChange());
     }
 
+    public Point in(Direction d, int am) {
+        return new Point(x + d.getXChange()*am, y + d.getYChange()*am);
+    }
+
+    public boolean inBounds(int xmin, int xmax, int ymin, int ymax) {
+        return x >= xmin && x < xmax && y >= ymin && y < ymax;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (! (o instanceof Point)) {

@@ -6,10 +6,10 @@ Create a class extending the `GolemController` class. Every round for every robo
 
 Annotate that class with the `ControllerDef` annotation. It contains the following attributes:
 
-  - *id*: A unique identifier for your controller.
-  - *name*: The name of your controller.
-  - *version*: The version of your controller.
-  - *devId*: Your CodeFray developer key.
+  - **id**: A unique identifier for your controller.
+  - **name**: The name of your controller.
+  - **version**: The version of your controller.
+  - **devId**: Your CodeFray developer key.
 
 You can test your code by compiling it and packaging it into a jarfile. Starting the CodeFray game will allow you to select your controller jar. You can run it against another controller jarfile you have, or one of the several included controllers.
 

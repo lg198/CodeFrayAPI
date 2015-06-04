@@ -48,16 +48,26 @@ public class Point {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (! (o instanceof Point)) {
-            return false;
-        }
-        Point p = (Point) o;
-        return p.getX() == getX() && p.getY() == getY();
+    public String toString() {
+        return String.format("(%d, %d)", x, y);
     }
 
     @Override
-    public String toString() {
-        return String.format("(%d, %d)", x, y);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Point point = (Point) o;
+
+        if (x != point.x) return false;
+        return y == point.y;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = x;
+        result = 31 * result + y;
+        return result;
     }
 }

@@ -14,4 +14,4 @@ Annotate that class with the `ControllerDef` annotation. It contains the followi
 You can test your code by compiling it and packaging it into a jarfile. Starting the CodeFray game will allow you to select your controller jar. You can run it against another controller jarfile you have, or one of the several included controllers.
 
 ## Rules
-The official CodeFray implementation rules can be found [here](https://github.com/lg198/CodeFray/wiki/Rules).
+The official CodeFray implementation rules can be found [here](https://github.com/lg198/CodeFray/wiki/Rules). Read them, as they are important.

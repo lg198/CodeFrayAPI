@@ -28,6 +28,14 @@ public enum Direction {
         return Direction.values()[next];
     }
 
+    public Direction counterClockwise() {
+        int next = ordinal() - 1;
+        if (next < 0) {
+            next = 7;
+        }
+        return Direction.values()[next];
+    }
+
 
     public static Direction between(Point p1, Point p2) {
         Vector v = Vector.between(p1, p2);

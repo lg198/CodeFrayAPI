@@ -39,7 +39,7 @@ public enum Direction {
 
     public static Direction between(Point p1, Point p2) {
         Vector v = Vector.between(p1, p2);
-        int xc = v.getXComponent() / Math.abs(v.getXComponent()), yc = v.getYComponent() / Math.abs(v.getYComponent());
+        int xc = v.getXComponent() == 0 ? 0 : v.getXComponent() / Math.abs(v.getXComponent()), yc = v.getYComponent() == 0 ? 0 : v.getYComponent() / Math.abs(v.getYComponent());
         Direction d = null;
         for (Direction dd : values()) {
             if (dd.getXChange() == xc && dd.getYChange() == yc) {

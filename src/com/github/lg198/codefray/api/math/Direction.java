@@ -22,7 +22,7 @@ public enum Direction {
 
     public Direction clockwise() {
         int next = ordinal() + 1;
-        if (next > 7) {
+        if (next > 3) {
             next = 0;
         }
         return Direction.values()[next];
@@ -31,7 +31,7 @@ public enum Direction {
     public Direction counterClockwise() {
         int next = ordinal() - 1;
         if (next < 0) {
-            next = 7;
+            next = 3;
         }
         return Direction.values()[next];
     }

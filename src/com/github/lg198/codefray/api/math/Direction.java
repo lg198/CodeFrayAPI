@@ -2,8 +2,8 @@ package com.github.lg198.codefray.api.math;
 
 public enum Direction {
 
-    NORTH(0, -1),  EAST(1, 0),
-    SOUTH(0, 1),  WEST(-1, 0);
+    NORTH(0, -1),  NORTHEAST(1, -1), EAST(1, 0), SOUTHEAST(1, 1),
+    SOUTH(0, 1),  SOUTHWEST(-1, 1), WEST(-1, 0), NORTHWEST(-1, -1);
 
     Direction(int x, int y) {
         xc = x;
@@ -22,7 +22,7 @@ public enum Direction {
 
     public Direction clockwise() {
         int next = ordinal() + 1;
-        if (next > 3) {
+        if (next > 7) {
             next = 0;
         }
         return Direction.values()[next];
@@ -31,7 +31,7 @@ public enum Direction {
     public Direction counterClockwise() {
         int next = ordinal() - 1;
         if (next < 0) {
-            next = 3;
+            next = 7;
         }
         return Direction.values()[next];
     }

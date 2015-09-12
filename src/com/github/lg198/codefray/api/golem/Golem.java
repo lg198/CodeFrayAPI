@@ -79,6 +79,11 @@ public interface Golem {
     public void move(Direction d);
 
     /**
+     * @return True if the golem can move in that direction, or false otherwise
+     */
+    public boolean canMove(Direction d);
+
+    /**
      *
      * @return The number of moves left in the current round
      */

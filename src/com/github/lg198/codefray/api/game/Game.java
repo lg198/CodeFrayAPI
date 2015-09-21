@@ -44,4 +44,11 @@ public interface Game {
      * @return An array of the teams in the game
      */
     public Team[] getTeams();
+
+    /**
+     *
+     * @param p The point at which to search
+     * @return The type of tile at point p
+     */
+    public TileType getTypeAt(Point p);
 }

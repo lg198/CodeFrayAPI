@@ -51,4 +51,8 @@ public interface Game {
      * @return The type of tile at point p
      */
     public TileType getTypeAt(Point p);
+
+    public int getMapWidth();
+
+    public int getMapHeight();
 }
